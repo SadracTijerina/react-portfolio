@@ -26,7 +26,7 @@ function App() {
   document.title = currentNav;
 
   return (
-    <>
+    <div>
       <Header
         navItems={navItems}
         currentNav={currentNav}
@@ -34,7 +34,7 @@ function App() {
       />
       <main>{page(currentNav)}</main>
       <Footer />
-    </>
+    </div>
   );
 }
 

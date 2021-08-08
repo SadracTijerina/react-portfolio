@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Image } from "react-bootstrap";
 
-function AboutMe(props) {
+function AboutMe() {
   return (
     <>
       <div class="crop">
@@ -33,7 +33,7 @@ function AboutMe(props) {
           malesuada fames ac ante ipsum primis in faucibus. Maecenas nec
           venenatis tellus, et pellentesque nunc. Morbi nec arcu id mi lobortis
           tincidunt. Sed ut metus ligula. Quisque non nulla tellus. Phasellus
-          sagittis vehicula nulla id venenatis. Sed non orci lectus.{" "}
+          sagittis vehicula nulla id venenatis. Sed non orci lectus.
         </p>
       </Container>
     </>

@@ -6,6 +6,21 @@ body {
   background: #d8dbe2;
 }
 
+footer {
+  background-color: var(--primary);
+  padding: 10px;
+  color: white;
+  margin-top: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.projects {
+}
+
 .color-nav {
   background-color: var(--primary);
 }
@@ -24,9 +39,6 @@ body {
   margin: 15px auto;
 }
 
-footer {
-  background-color: var(--primary);
-  padding: 10px;
-  color: white;
-  margin-top: 25px;
+.text-black {
+  color: black;
 }

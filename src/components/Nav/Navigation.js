@@ -2,13 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 function Navigation(props) {
-  const {
-    navItems = [],
-    currentNav,
-    setCurrentNav,
-    contactSelected,
-    setContactSelected,
-  } = props;
+  const { navItems = [], currentNav, setCurrentNav } = props;
 
   return (
     <Navbar className="color-nav" variant="dark">
