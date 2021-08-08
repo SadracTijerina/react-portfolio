@@ -8,6 +8,8 @@ function ContactMe() {
     message: "",
   });
 
+  const [errors, setErrors] = useState(false);
+
   function handleChange(e) {
     e.preventDefault();
 
@@ -20,10 +22,20 @@ function ContactMe() {
     }
   }
 
+  function onSubmit(e) {
+    e.preventDefault();
+
+    const errors = document.getElementsByClassName("is-invalid");
+
+    if (errors > 0) {
+      setErrors(true);
+    } else setErrors(false);
+  }
+
   return (
     <Container>
       <h1>Contact Me</h1>
-      <Form>
+      <Form onSubmit={onSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Name:</Form.Label>
           <Form.Control
@@ -54,6 +66,7 @@ function ContactMe() {
         </Form.Group>
 
         <Button className="color-nav">Submit</Button>
+        {errors && <p>Missing data make sure look at input that is red</p>}
       </Form>
     </Container>
   );
