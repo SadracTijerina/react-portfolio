@@ -6,9 +6,9 @@ function Footer(props) {
     <footer>
       <Container>
         <Row className="justify-content-md-center">
-          <Col md="auto">1 of 3</Col>
-          <Col md="auto">Variable width content</Col>
-          <Col md="auto">3 of 3</Col>
+          <Col md="auto">Created By:</Col>
+          <Col md="auto">Sadrac Tijerina</Col>
+          <Col md="auto">2021</Col>
         </Row>
       </Container>
     </footer>
